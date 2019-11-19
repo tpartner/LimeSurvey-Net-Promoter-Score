@@ -24,6 +24,10 @@
         {{ sRows }}
     </div>
 </div>
+<div class="nps-answers-warning text-danger" style="display:none;";>
+	This question type needs 11 answer options with codes 0-11.<br />
+    Please check the answer option codes and order.
+</div>
 
 {# Value for expression manager javascript (use id) ; no need to submit #}
 {{ C.Html.hiddenField("java"~name,value,({
@@ -32,3 +36,34 @@
 }))
 }}
 <!-- end of answer -->
+
+<script type="text/javascript" charset="utf-8">
+
+	$(document).on('ready pjax:scriptcomplete',function(){
+			
+		var qID = '{{ name }}'.split('X')[2];
+		var thisQuestion = $('#question'+qID);
+		
+		var correctAnswers = [0,1,2,3,4,5,6,7,8,9,10];
+		
+		// Load the LS answers
+		var questionAnswers = [];
+		$('.answer-item input:radio', thisQuestion).each(function(i) {
+			questionAnswers.push($(this).val());
+		});
+		
+		// Compare the arrays
+		var arrayCompare = true;
+		$.each(correctAnswers, function(i, val) {
+			if($.trim(val) != $.trim(questionAnswers[i])) {
+				arrayCompare = false;
+			}
+		});	
+
+		// Display warning if the answer options are incorrect 
+		if(arrayCompare == false) {
+			$('.nps-wrapper', thisQuestion).hide(); 
+			$('.nps-answers-warning', thisQuestion).show(); 
+		}
+    });
+</script>
