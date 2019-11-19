@@ -1,0 +1,34 @@
+{#
+/**
+ * Net-Promoter-Score based on List Radio
+ *
+ * @var $name
+ * @var $value
+ */
+#}
+
+{% set showColors = '' %}
+
+{% if question_template_attribute.nps_show_colors == 'yes' %}
+    {% set showColors = ' show-colors' %}
+{% endif %}
+
+<!-- answer -->
+{{ sTimer }}
+
+<div class="nps-wrapper{{ showColors }}">
+	<div class="nps-text nps-left-text col-xs-5">{{question_template_attribute.nps_left_text}}</div>
+	<div class="nps-text nps-right-text col-xs-5 pull-right">{{question_template_attribute.nps_right_text}}</div>
+    <div class="{{ coreClass }} row nps-table" role="radiogroup" aria-labelledby="ls-question-text-{{ name }}">
+        {# rows/answer_row.php #}
+        {{ sRows }}
+    </div>
+</div>
+
+{# Value for expression manager javascript (use id) ; no need to submit #}
+{{ C.Html.hiddenField("java"~name,value,({
+    'id' : "java"~name,
+    'disabled' : true,
+}))
+}}
+<!-- end of answer -->
