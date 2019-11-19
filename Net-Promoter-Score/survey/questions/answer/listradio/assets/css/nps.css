@@ -9,6 +9,7 @@
 
 .nps-wrapper {
 	/*max-width: 800px;*/
+	margin-bottom: 25px;
 }
 
 .nps-table {
@@ -92,13 +93,7 @@
 	cursor: default;
 }
 
-
-
-
-
-
-
-
-
-
-
+.nps-answers-warning {
+	padding: 15px 0;
+	font-weight: bold;
+}
