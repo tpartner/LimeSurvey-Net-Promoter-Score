@@ -77,7 +77,7 @@
             </options>
             <default>no</default>
             <help>Select whether to show coloured top borders for the answer options.</help>
-            <caption>Show/Hide colours</caption>
+            <caption>Show colours</caption>
             <readonly_when_active>false</readonly_when_active>
         </attribute>
     </custom_attributes>
