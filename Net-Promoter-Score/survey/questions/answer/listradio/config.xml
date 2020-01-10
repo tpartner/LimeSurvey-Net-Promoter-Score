@@ -50,7 +50,6 @@
             <default>...</default>
             <help>The left text displayed above the scale.</help>
             <caption>Scale left text</caption>
-            <readonly_when_active>false</readonly_when_active>
             <i18n>hr</i18n>
         </attribute>
 		
@@ -62,7 +61,6 @@
             <default>...</default>
             <help>The right text displayed above the scale.</help>
             <caption>Scale right text</caption>
-            <readonly_when_active>false</readonly_when_active>
             <i18n>hr</i18n>
         </attribute>
 
@@ -78,7 +76,6 @@
             <default>no</default>
             <help>Select whether to show coloured top borders for the answer options.</help>
             <caption>Show colours</caption>
-            <readonly_when_active>false</readonly_when_active>
         </attribute>
     </custom_attributes>
 
