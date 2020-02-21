@@ -77,6 +77,116 @@
             <help>Select whether to show coloured top borders for the answer options.</help>
             <caption>Show colours</caption>
         </attribute>
+		
+        <attribute>
+            <name>nps_0_color</name>
+            <category>Custom options</category>
+            <sortorder>3</sortorder>
+            <inputtype>text</inputtype>
+            <default>#FF0000</default>
+            <help>The top-border colour for answer "0" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 0</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_1_color</name>
+            <category>Custom options</category>
+            <sortorder>4</sortorder>
+            <inputtype>text</inputtype>
+            <default>#FF0000</default>
+            <help>The top-border colour for answer "1" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 1</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_2_color</name>
+            <category>Custom options</category>
+            <sortorder>5</sortorder>
+            <inputtype>text</inputtype>
+            <default>#FF0000</default>
+            <help>The top-border colour for answer "2" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 2</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_3_color</name>
+            <category>Custom options</category>
+            <sortorder>6</sortorder>
+            <inputtype>text</inputtype>
+            <default>#FF0000</default>
+            <help>The top-border colour for answer "3" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 3</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_4_color</name>
+            <category>Custom options</category>
+            <sortorder>7</sortorder>
+            <inputtype>text</inputtype>
+            <default>#FF0000</default>
+            <help>The top-border colour for answer "4" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 4</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_5_color</name>
+            <category>Custom options</category>
+            <sortorder>8</sortorder>
+            <inputtype>text</inputtype>
+            <default>#FF0000</default>
+            <help>The top-border colour for answer "5" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 5</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_6_color</name>
+            <category>Custom options</category>
+            <sortorder>9</sortorder>
+            <inputtype>text</inputtype>
+            <default>#FF0000</default>
+            <help>The top-border colour for answer "6" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 6</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_7_color</name>
+            <category>Custom options</category>
+            <sortorder>10</sortorder>
+            <inputtype>text</inputtype>
+            <default>#E6D50E</default>
+            <help>The top-border colour for answer "7" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 7</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_8_color</name>
+            <category>Custom options</category>
+            <sortorder>11</sortorder>
+            <inputtype>text</inputtype>
+            <default>#E6D50E</default>
+            <help>The top-border colour for answer "8" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 8</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_9_color</name>
+            <category>Custom options</category>
+            <sortorder>12</sortorder>
+            <inputtype>text</inputtype>
+            <default>#008000</default>
+            <help>The top-border colour for answer "9" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 9</caption>
+        </attribute>
+		
+        <attribute>
+            <name>nps_10_color</name>
+            <category>Custom options</category>
+            <sortorder>13</sortorder>
+            <inputtype>text</inputtype>
+            <default>#008000</default>
+            <help>The top-border colour for answer "10" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
+            <caption>Colour 10</caption>
+        </attribute>
     </custom_attributes>
 
     <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
