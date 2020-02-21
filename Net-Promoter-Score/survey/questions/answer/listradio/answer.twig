@@ -13,6 +13,18 @@
     {% set showColors = ' show-colors' %}
 {% endif %}
 
+{% set color0 = question_template_attribute.nps_0_color|trim %}
+{% set color1 = question_template_attribute.nps_1_color|trim %}
+{% set color2 = question_template_attribute.nps_2_color|trim %}
+{% set color3 = question_template_attribute.nps_3_color|trim %}
+{% set color4 = question_template_attribute.nps_4_color|trim %}
+{% set color5 = question_template_attribute.nps_5_color|trim %}
+{% set color6 = question_template_attribute.nps_6_color|trim %}
+{% set color7 = question_template_attribute.nps_7_color|trim %}
+{% set color8 = question_template_attribute.nps_8_color|trim %}
+{% set color9 = question_template_attribute.nps_9_color|trim %}
+{% set color10 = question_template_attribute.nps_10_color|trim %}
+
 <!-- answer -->
 {{ sTimer }}
 
@@ -65,5 +77,18 @@
 			$('.nps-wrapper', thisQuestion).hide(); 
 			$('.nps-answers-warning', thisQuestion).show(); 
 		}
+		
+		// Top border colours
+		if('{{ color0 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-0', thisQuestion).css('border-top-color', '{{ color0 }}'); }
+		if('{{ color1 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-1', thisQuestion).css('border-top-color', '{{ color1 }}'); }
+		if('{{ color2 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-2', thisQuestion).css('border-top-color', '{{ color2 }}'); }
+		if('{{ color3 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-3', thisQuestion).css('border-top-color', '{{ color3 }}'); }
+		if('{{ color4 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-4', thisQuestion).css('border-top-color', '{{ color4 }}'); }
+		if('{{ color5 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-5', thisQuestion).css('border-top-color', '{{ color5 }}'); }
+		if('{{ color6 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-6', thisQuestion).css('border-top-color', '{{ color6 }}'); }
+		if('{{ color7 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-7', thisQuestion).css('border-top-color', '{{ color7 }}'); }
+		if('{{ color8 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-8', thisQuestion).css('border-top-color', '{{ color8 }}'); }
+		if('{{ color9 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-9', thisQuestion).css('border-top-color', '{{ color9 }}'); }
+		if('{{ color10 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-10', thisQuestion).css('border-top-color', '{{ color10 }}'); }
     });
 </script>
