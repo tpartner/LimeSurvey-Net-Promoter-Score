@@ -187,6 +187,64 @@
             <help>The top-border colour for answer "10" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 10</caption>
         </attribute>
+        
+        <!-- Hide some core attributes -->
+        <attribute>
+            <name>other_replace_text</name>
+            <category>Display</category>
+            <inputtype/>
+            <i18n>1</i18n> <!-- Only needed to prevent error in 3.x -->
+        </attribute>
+        <attribute>
+            <name>alphasort</name>
+            <category>Display</category>
+            <inputtype/>
+            <default>0</default>
+        </attribute>
+        <attribute>
+            <name>hide_tip</name>
+            <category>Display</category>
+            <inputtype/>
+            <default>0</default>
+        </attribute>
+        <attribute>
+            <name>display_columns</name>
+            <category>Display</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>random_order</name>
+            <category>Display</category>
+            <inputtype/>
+        </attribute>
+		
+        <attribute>
+            <name>other_comment_mandatory</name>
+            <category>Logic</category>
+            <inputtype/>
+            <default>0</default>
+        </attribute>
+        <attribute>
+            <name>other_numbers_only</name>
+            <category>Logic</category>
+            <inputtype/>
+            <default>0</default>
+        </attribute>
+        <attribute>
+            <name>array_filter_exclude</name>
+            <category>Logic</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>array_filter_style</name>
+            <category>Logic</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>array_filter</name>
+            <category>Logic</category>
+            <inputtype/>
+        </attribute>
     </custom_attributes>
 
     <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
