@@ -22,9 +22,11 @@ Compatible with LimeSurvey versions 3.x and 4.x.
 
 **Notes:**
 
-1) The styles for the theme can be modified in */pathToLimeSurvey/upload/themes/question/Net-Promoter-Score/survey/questions/answer/listradio/assets/css/nps.css*.
+1) Due to the large number of question attributes, you may need to increase the 'max_input_vars' setting in your PHP configuration (php.ini file). Try 5000 or 10000.
 
-4) Demo survey in */Net-Promoter-Score/survey/questions/answer/listradio/assets/demo/*.
+2) The styles for the theme can be modified in */pathToLimeSurvey/upload/themes/question/Net-Promoter-Score/survey/questions/answer/listradio/assets/css/nps.css*.
+
+3) Demo survey in */Net-Promoter-Score/survey/questions/answer/listradio/assets/demo/*.
     
     
 *Custom themes are given without any warranty, implied or otherwise.*
