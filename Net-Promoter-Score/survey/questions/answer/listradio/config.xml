@@ -24,6 +24,8 @@
     </metadata>
 
     <compatibility>
+        <version>3.0</version>
+        <version>4.0</version>
         <version>5.0</version>
     </compatibility>
 
@@ -42,7 +44,7 @@
         </preview>
     </files>
 
-    <attributes>
+    <custom_attributes>
         <!-- New attributes -->
         <attribute>
             <name>nps_left_text</name>
@@ -247,7 +249,7 @@
             <category>Logic</category>
             <inputtype/>
         </attribute>
-    </attributes>
+    </custom_attributes>
 
     <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
     <engine>
