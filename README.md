@@ -7,7 +7,7 @@ Compatible with LimeSurvey versions 3.x, 4.x and 5.x.
 
 **Implementation:**
 
-1) - **Manual installation (all supported versions)** - Extract the download and upload the *Net-Promoter-Score* folder to */pathToLimeSurvey/upload/themes/question/*. If version 4.x+, activate the theme in the theme manager.
+1) - **Manual installation (all supported versions)** - Extract the download and upload the *Net-Promoter-Score* folder to */pathToLimeSurvey/upload/themes/question/*. If version 4.x or greater, activate the theme in the theme manager.
     - **Theme manager (4.x, 5.x)** - Extract the download, compress (zip) the *Net-Promoter-Score* folder and import via the theme manager.
 
 2) Create a list-radio question, click Save.
