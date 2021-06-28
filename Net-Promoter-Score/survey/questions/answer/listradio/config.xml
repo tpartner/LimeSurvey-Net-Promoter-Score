@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <config>
     <metadata>
         <name>Net-Promoter-Score</name>
         <type>question_theme</type>
         <title>Net Promoter Score</title>
         <creationDate>15/11/2019</creationDate>
+        <lastUpdate>28/06/2021</lastUpdate>
         <author>Tony Partner</author>
-        <authorEmail>tpartner@partnersurveys.com</authorEmail>
         <authorUrl>http://partnersurveys.com</authorUrl>
+        <supportUrl>None</supportUrl>
         <license>GNU General Public License version 2 or later</license>
         <version>1.0</version>
         <apiVersion>1</apiVersion>
-        <description>A net promoter score question</description>		
+        <lastSecurityUpdate>1.0</lastSecurityUpdate>
+        <description>A net promoter score question</description>        
         <questionType>L</questionType>
         <group>Single choice questions</group>
         <answerscales>0</answerscales>
         <hasdefaultvalues>1</hasdefaultvalues>
         <assessable>1</assessable>
         <class>net-promoter-score</class>
+        <subquestions>0</subquestions>
     </metadata>
 
     <compatibility>
-        <version>4.0</version>
+        <version>5.0</version>
     </compatibility>
 
     <!--
@@ -35,12 +37,12 @@
         </css>
         <js>
         </js>
-		<preview>
-			<filename>images/nps_1.png</filename>
-		</preview>
+        <preview>
+            <filename>images/nps_1.png</filename>
+        </preview>
     </files>
 
-    <custom_attributes>
+    <attributes>
         <!-- New attributes -->
         <attribute>
             <name>nps_left_text</name>
@@ -50,9 +52,9 @@
             <default>...</default>
             <help>The left text displayed above the scale.</help>
             <caption>Scale left text</caption>
-            <i18n>hr</i18n>
+            <i18n>1</i18n>
         </attribute>
-		
+        
         <attribute>
             <name>nps_right_text</name>
             <category>Custom options</category>
@@ -61,7 +63,7 @@
             <default>...</default>
             <help>The right text displayed above the scale.</help>
             <caption>Scale right text</caption>
-            <i18n>hr</i18n>
+            <i18n>1</i18n>
         </attribute>
 
         <attribute>
@@ -77,7 +79,7 @@
             <help>Select whether to show coloured top borders for the answer options.</help>
             <caption>Show colours</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_0_color</name>
             <category>Custom options</category>
@@ -87,7 +89,7 @@
             <help>The top-border colour for answer "0" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 0</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_1_color</name>
             <category>Custom options</category>
@@ -97,7 +99,7 @@
             <help>The top-border colour for answer "1" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 1</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_2_color</name>
             <category>Custom options</category>
@@ -107,7 +109,7 @@
             <help>The top-border colour for answer "2" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 2</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_3_color</name>
             <category>Custom options</category>
@@ -117,7 +119,7 @@
             <help>The top-border colour for answer "3" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 3</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_4_color</name>
             <category>Custom options</category>
@@ -127,7 +129,7 @@
             <help>The top-border colour for answer "4" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 4</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_5_color</name>
             <category>Custom options</category>
@@ -137,7 +139,7 @@
             <help>The top-border colour for answer "5" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 5</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_6_color</name>
             <category>Custom options</category>
@@ -147,7 +149,7 @@
             <help>The top-border colour for answer "6" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 6</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_7_color</name>
             <category>Custom options</category>
@@ -157,7 +159,7 @@
             <help>The top-border colour for answer "7" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 7</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_8_color</name>
             <category>Custom options</category>
@@ -167,7 +169,7 @@
             <help>The top-border colour for answer "8" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 8</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_9_color</name>
             <category>Custom options</category>
@@ -177,7 +179,7 @@
             <help>The top-border colour for answer "9" if "Show colours" is set to Yes. Must be a valid CSS border-color value.</help>
             <caption>Colour 9</caption>
         </attribute>
-		
+        
         <attribute>
             <name>nps_10_color</name>
             <category>Custom options</category>
@@ -217,7 +219,7 @@
             <category>Display</category>
             <inputtype/>
         </attribute>
-		
+        
         <attribute>
             <name>other_comment_mandatory</name>
             <category>Logic</category>
@@ -245,7 +247,7 @@
             <category>Logic</category>
             <inputtype/>
         </attribute>
-    </custom_attributes>
+    </attributes>
 
     <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
     <engine>
