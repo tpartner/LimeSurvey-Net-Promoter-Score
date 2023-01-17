@@ -1,9 +1,18 @@
 
-.nps-text {
+/***** 
+    Styles for the Net promoter custom question theme
+    Copyright (C) 2023 - Tony Partner (http://partnersurveys.com)
+    Licensed MIT, GPL
+    Version - 1.0
+    Create date - 2019-11-15 08:00
+    Last update - 2023-01-17 08:00
+*****/
+
+.nps-wrapper .nps-text {
 	padding: 5px 0;
 }
 
-.nps-right-text {
+.nps-wrapper .nps-right-text {
 	text-align: right;
 }
 
@@ -12,7 +21,7 @@
 	margin-bottom: 25px;
 }
 
-.nps-table {
+.nps-wrapper .nps-table {
 	display: table;
 	padding: 0;
 	width: 100%;
@@ -20,7 +29,7 @@
 	border-right: 0 none;
 }
 
-.nps-table > ul {
+.nps-wrapper .nps-table > ul {
 	display: table-row;
 	float: none;
 	width: auto;
@@ -28,7 +37,7 @@
 	margin: 0;
 }
 
-.nps-table > ul > li {
+.nps-wrapper .nps-table > ul > li {
 	position: relative;
 	display: table-cell;
 	padding: 0;
@@ -40,7 +49,7 @@
 	border-left: 0 none;
 }
 
-.nps-table > ul > li:first-child {
+.nps-wrapper .nps-table > ul > li:first-child {
 	border-left: 1px solid #C1C1C1;
 }
 
@@ -64,12 +73,12 @@
 	border-top: 2px solid green;
 }
 
-.nps-table input[type="radio"] {
+.nps-wrapper .nps-table input[type="radio"] {
 	position: absolute;
 	left: -9999em;
 }
 
-.nps-table .control-label {
+.nps-wrapper .nps-table .control-label {
 	display: block;
 	padding: 0;
 	margin: 0;
@@ -84,11 +93,11 @@
 	transition: background-color 300ms ease;
 }
 
-.nps-table .control-label:hover {
+.nps-wrapper .nps-table .control-label:hover {
 	background-color: #DADADA;
 }
 
-.nps-table input[type="radio"]:checked + label {
+.nps-wrapper .nps-table input[type="radio"]:checked + label {
 	background-color: #CECECE;
 	cursor: default;
 }
