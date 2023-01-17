@@ -10,7 +10,7 @@
 {% set showColors = '' %}
 
 {% if question_template_attribute.nps_show_colors == 'yes' %}
-    {% set showColors = ' show-colors' %}
+	{% set showColors = ' show-colors' %}
 {% endif %}
 
 {% set color0 = question_template_attribute.nps_0_color|trim %}
@@ -29,22 +29,22 @@
 {{ sTimer }}
 
 <div class="nps-wrapper{{ showColors }}">
-	<div class="nps-text nps-left-text col-xs-5">{{question_template_attribute.nps_left_text}}</div>
-	<div class="nps-text nps-right-text col-xs-5 pull-right">{{question_template_attribute.nps_right_text}}</div>
-    <div class="{{ coreClass }} nps-table" role="radiogroup" aria-labelledby="ls-question-text-{{ name }}">
-        {# rows/answer_row.php #}
-        {{ sRows }}
-    </div>
+	<div class="nps-text nps-left-text col-xs-5 col-5" pull-left>{{question_template_attribute.nps_left_text}}</div>
+	<div class="nps-text nps-right-text col-xs-5 col-5 pull-right">{{question_template_attribute.nps_right_text}}</div>
+	<div class="{{ coreClass }} nps-table" role="radiogroup" aria-labelledby="ls-question-text-{{ name }}">
+		{# rows/answer_row.php #}
+		{{ sRows }}
+	</div>
 </div>
 <div class="nps-answers-warning text-danger" style="display:none;";>
-    This question type needs 11 answer options with codes 0-10.<br />
-    Please check the answer option codes and order.
+	This question type needs 11 answer options with codes 0-10.<br />
+	Please check the answer option codes and order.
 </div>
 
 {# Value for expression manager javascript (use id) ; no need to submit #}
 {{ C.Html.hiddenField("java"~name,value,({
-    'id' : "java"~name,
-    'disabled' : true,
+	'id' : "java"~name,
+	'disabled' : true,
 }))
 }}
 <!-- end of answer -->
@@ -90,5 +90,5 @@
 		if('{{ color8 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-8', thisQuestion).css('border-top-color', '{{ color8 }}'); }
 		if('{{ color9 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-9', thisQuestion).css('border-top-color', '{{ color9 }}'); }
 		if('{{ color10 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-10', thisQuestion).css('border-top-color', '{{ color10 }}'); }
-    });
+	});
 </script>
