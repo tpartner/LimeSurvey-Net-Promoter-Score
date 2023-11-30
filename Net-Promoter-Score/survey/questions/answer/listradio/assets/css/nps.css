@@ -78,6 +78,11 @@
 	left: -9999em;
 }
 
+.dir-rtl .nps-wrapper .nps-table input[type="radio"] {
+	left: auto;
+	right: -9999em;
+}
+
 .nps-wrapper .nps-table .control-label {
 	display: block;
 	padding: 0;
