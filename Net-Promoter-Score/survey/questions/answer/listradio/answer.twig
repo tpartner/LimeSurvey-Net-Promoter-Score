@@ -55,6 +55,11 @@
 			
 		var qID = '{{ name }}'.split('X')[2];
 		var thisQuestion = $('#question'+qID);
+
+        // Work around the "fix" for bug #18211 (which removed the <ul> element)
+        if($('.nps-wrapper .nps-table > ul', thisQuestion).length == 0) {
+            $('.nps-wrapper .nps-table > *', thisQuestion).wrapAll('<ul class="list-unstyled col-sm-{{ iColumnWidth }} col-xs-12 col-12" />');
+        }
 		
 		var correctAnswers = [0,1,2,3,4,5,6,7,8,9,10];
 		
@@ -92,3 +97,4 @@
 		if('{{ color10 }}' != '') { $('.nps-wrapper.show-colors .nps-table > ul > li.item-10', thisQuestion).css('border-top-color', '{{ color10 }}'); }
 	});
 </script>
+
