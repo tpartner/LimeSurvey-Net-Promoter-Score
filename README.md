@@ -1,4 +1,4 @@
-# A Net Promoter Score (NPS) type question for LimeSurvey
+# A Net Promoter Score (NPS) type question for LimeSurvey 3.x-6.x
 **A custom question theme that transforms a list-radio type question into a Net Promoter Score type question (scale 0-10).**
 
 Compatible with LimeSurvey versions 3.x-6.x.
